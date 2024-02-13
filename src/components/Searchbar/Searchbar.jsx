@@ -7,8 +7,8 @@ export default class Searchbar extends Component {
     inputText: '',
   };
 
-  handleClick = evt => {
-    this.state({ inputText: evt.target.value });
+  handleChange = evt => {
+    this.setState({ inputText: evt.target.value });
   };
 
   handleSubmit = evt => {
@@ -37,7 +37,7 @@ export default class Searchbar extends Component {
             autoFocus
             placeholder="Search images and photos"
             value={imputText}
-            onChange={this.handleClick}
+            onChange={this.handleChange}
           />
         </form>
       </header>
